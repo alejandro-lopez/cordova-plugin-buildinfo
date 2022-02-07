@@ -23,7 +23,6 @@ function onDeviceReady() {
 	console.log('BuildInfo.versionCode    =' + BuildInfo.versionCode);
 	console.log('BuildInfo.debug          =' + BuildInfo.debug);
 	console.log('BuildInfo.buildType      =' + BuildInfo.buildType);
-	console.log('BuildInfo.flavor         =' + BuildInfo.flavor);
 	console.log('BuildInfo.buildDate      =' + BuildInfo.buildDate);
 	console.log('BuildInfo.installDate    =' + BuildInfo.installDate);
 }
@@ -55,7 +54,6 @@ cordova plugin add cordova-plugin-buildinfo
 - [`BuildInfo.versionCode`](#BuildInfo.versionCode)
 - [`BuildInfo.debug`](#BuildInfo.debug)
 - [`BuildInfo.buildType`](#BuildInfo.buildType)
-- [`BuildInfo.flavor`](#BuildInfo.flavor)
 - [`BuildInfo.buildDate`](#BuildInfo.buildDate)
 - [`BuildInfo.installDate`](#BuildInfo.installDate)
 - [`BuildInfo.windows`](#BuildInfo.windows)
@@ -194,21 +192,6 @@ Get the build type.
 |Browser|empty string|String|
 |Electron|empty string|String|
 
-
-### BuildInfo.flavor
-
-Android Only.
-
-Get the flavor.
-
-|Platform|Value|Type|
-|--------|-----|----|
-|Android|BuildConfig.FLAVOR|String|
-|iOS|empty string|String|
-|Windows|empty string|String|
-|macOS(OS X)|empty string|String|
-|Browser|empty string|String|
-|Electron|empty string|String|
 
 ### BuildInfo.buildDate
 
