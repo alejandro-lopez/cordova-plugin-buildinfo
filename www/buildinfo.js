@@ -37,7 +37,7 @@ module.exports = {
 	buildDate: null,
 	installDate: null,
 	buildType: '',
-	flavor: ''
+	//flavor: ''
 };
 
 function _buldinfoCheckCordovaPlatform() {
@@ -126,9 +126,9 @@ if (_buldinfoCheckCordovaPlatform()) {
 					module.exports.buildType = res.buildType;
 				}
 
-				if ('undefined' !== typeof res.flavor) {
+				/*if ('undefined' !== typeof res.flavor) {
 					module.exports.flavor = res.flavor;
-				}
+				}*/
 
 				if ('undefined' !== typeof res.buildDate) {
 					if (res.buildDate instanceof Date) {
