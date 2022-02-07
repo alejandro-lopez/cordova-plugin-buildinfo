@@ -152,7 +152,7 @@ public class BuildInfo extends CordovaPlugin {
 			mBuildInfoCache.put("buildDate"      , convertLongToDateTimeString(getClassFieldLong(c, "_BUILDINFO_TIMESTAMP", 0L)));
 			mBuildInfoCache.put("installDate"    , convertLongToDateTimeString(firstInstallTime));
 			mBuildInfoCache.put("buildType"      , getClassFieldString(c, "BUILD_TYPE", ""));
-			mBuildInfoCache.put("flavor"         , getClassFieldString(c, "FLAVOR", ""));
+			//mBuildInfoCache.put("flavor"         , getClassFieldString(c, "FLAVOR", ""));
 
 			if (debug) {
 				Log.d(TAG, "packageName    : \"" + mBuildInfoCache.getString("packageName") + "\"");
@@ -163,7 +163,7 @@ public class BuildInfo extends CordovaPlugin {
 				Log.d(TAG, "versionCode    : " + mBuildInfoCache.getInt("versionCode"));
 				Log.d(TAG, "debug          : " + (mBuildInfoCache.getBoolean("debug") ? "true" : "false"));
 				Log.d(TAG, "buildType      : \"" + mBuildInfoCache.getString("buildType") + "\"");
-				Log.d(TAG, "flavor         : \"" + mBuildInfoCache.getString("flavor") + "\"");
+				//Log.d(TAG, "flavor         : \"" + mBuildInfoCache.getString("flavor") + "\"");
 				Log.d(TAG, "buildDate      : \"" + mBuildInfoCache.getString("buildDate") + "\"");
 				Log.d(TAG, "installDate    : \"" + mBuildInfoCache.getString("installDate") + "\"");
 			}
